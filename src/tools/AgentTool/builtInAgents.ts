@@ -8,6 +8,11 @@ import { GENERAL_PURPOSE_AGENT } from './built-in/generalPurposeAgent.js'
 import { PLAN_AGENT } from './built-in/planAgent.js'
 import { STATUSLINE_SETUP_AGENT } from './built-in/statuslineSetup.js'
 import { OFFENSIVE_SECURITY_AGENT } from './built-in/offensiveSecurityAgent.js'
+import { RECON_AGENT } from './built-in/reconAgent.js'
+import { WEB_APP_PENTEST_AGENT } from './built-in/webAppPentestAgent.js'
+import { NETWORK_AGENT } from './built-in/networkAgent.js'
+import { POST_EXPLOITATION_AGENT } from './built-in/postExploitationAgent.js'
+import { REPORTING_AGENT } from './built-in/reportingAgent.js'
 import { VERIFICATION_AGENT } from './built-in/verificationAgent.js'
 import type { AgentDefinition } from './loadAgentsDir.js'
 
@@ -44,9 +49,14 @@ export function getBuiltInAgents(): AgentDefinition[] {
   }
 
   const agents: AgentDefinition[] = [
+    OFFENSIVE_SECURITY_AGENT,
+    RECON_AGENT,
+    WEB_APP_PENTEST_AGENT,
+    NETWORK_AGENT,
+    POST_EXPLOITATION_AGENT,
+    REPORTING_AGENT,
     GENERAL_PURPOSE_AGENT,
     STATUSLINE_SETUP_AGENT,
-    OFFENSIVE_SECURITY_AGENT,
   ]
 
   if (areExplorePlanAgentsEnabled()) {

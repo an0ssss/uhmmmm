@@ -1,10 +1,11 @@
 {
-  "name": "@gitlawb/openclaude",
+  "name": "openvuln",
   "version": "0.5.2",
-  "description": "Claude Code opened to any LLM — OpenAI, Gemini, DeepSeek, Ollama, and 200+ models",
+  "description": "OpenVuln — Offensive cybersecurity agentic CLI for authorized penetration testing, vulnerability assessment, and red team operations",
   "type": "module",
   "bin": {
-    "openclaude": "./bin/openclaude"
+    "openclaude": "./bin/openclaude",
+    "openvuln": "./bin/openclaude"
   },
   "files": [
     "bin/",
@@ -143,12 +144,14 @@
     "url": "https://github.com/Gitlawb/openclaude.git"
   },
   "keywords": [
-    "claude-code",
-    "openai",
-    "llm",
+    "offensive-security",
+    "penetration-testing",
+    "red-team",
+    "vulnerability-assessment",
     "cli",
     "agent",
-    "deepseek",
+    "llm",
+    "openai",
     "ollama",
     "gemini"
   ],
